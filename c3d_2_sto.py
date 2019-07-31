@@ -1,4 +1,9 @@
 """
+Issues:
+
+- The OpenSim C3DFileAdapter() only supports Type-2 (AMTI & Bertec) forceplates. If you have C3D files having other forceplate types, particularly Kistler forceplates, please consider donating these files to the OpenSim project (email: opensim@stanford.edu)
+- If you have NaNs in your forces (.mot) file, the IDTool will generate all NaNs for the joint torques. The current workaround is to delete any time frames where there is an offending NaN. (forum post)
+
 Prerequisites:
 
 Note on Python 2.7.x vs Python 3
