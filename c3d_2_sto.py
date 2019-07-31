@@ -38,7 +38,11 @@ import os, unittest
 import opensim as osim
 
 #originally there were no osim class prefix (fixed)
-tables = osim.C3DFileAdapter.readFile(os.path.join(test_dir, 'walking2.c3d'), 1)
+#Signature: osim.C3DFileAdapter.readFile(fileName)
+#Docstring:
+#readFile(std::string const & fileName) -> StdMapStringAbstractDataTable
+#removing second parameter (1) - fixed
+tables = osim.C3DFileAdapter.readFile(os.path.join(test_dir, 'walking2.c3d'))
 markers = tables['markers']
 forces = tables['forces']
   
