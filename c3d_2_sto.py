@@ -4,7 +4,8 @@ import opensim as osim
 
 #FIX! Originally there were no osim class prefix
 #FIX! Change fileRead() from paerent class FileAdapter to read() from C3DFileAdpter class
-tables = osim.C3DFileAdapter().read(os.path.join(test_dir, 'walking5.c3d'), 1)
+
+tables = osim.C3DFileAdapter().read(os.path.join(test_dir, 'walking5.c3d'), 0)
 markers = tables['markers']
 forces = tables['forces']
   
