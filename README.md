@@ -1,5 +1,5 @@
 # c3d_2_sto
- c3d file converter for OpenSIMtk markers and forces
+ c3d file converter for OpenSIMtk markers and forces. Derivied from https://simtk-confluence.stanford.edu:8443/display/OpenSim/C3D+%28.c3d%29+Files
 
 #Issues:
 

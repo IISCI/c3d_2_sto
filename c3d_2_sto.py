@@ -38,6 +38,6 @@ forcesFilename = 'forces.sto'
 stoAdapter.write(forcesFlat, forcesFilename)
 forcesDouble = stoAdapter.read(forcesFilename)
        
-# Clean up if necessary - uncomment two rows below
+# Clean up if necessary - uncomment two rows below or leave it commented to preserve data files
 # os.remove(markersFilename)
 # os.remove(forcesFilename)
