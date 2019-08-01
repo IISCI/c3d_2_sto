@@ -1,11 +1,8 @@
+#added import of neccessary classes statements
 import os
 import opensim as osim
 
-#originally there were no osim class prefix (fixed)
-#Signature: osim.C3DFileAdapter.readFile(fileName)
-#Docstring:
-#readFile(std::string const & fileName) -> StdMapStringAbstractDataTable
-
+#FIX! Originally there were no osim class prefix
 #FIX! Change fileRead() from paerent class FileAdapter to read() from C3DFileAdpter class
 tables = osim.C3DFileAdapter().read(os.path.join(test_dir, 'walking5.c3d'), 1)
 markers = tables['markers']

@@ -8,6 +8,8 @@
 
 #Prerequisites:
 
+Install OpenSIM 4.0 or higher
+
 Note on Python 2.7.x vs Python 3
 The Python package that comes with the OpenSim GUI distribution will only work with Python 2.7.x. For Python 3, you must build the OpenSim API (opensim-core) from scratch and set the CMake variable OPENSIM_PYTHON_VERSION to 3.
 
