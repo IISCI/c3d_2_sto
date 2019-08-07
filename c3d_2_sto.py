@@ -5,7 +5,12 @@ import opensim as osim
 #FIX! Originally there were no osim class prefix
 #FIX! Change fileRead() from paerent class FileAdapter to read() from C3DFileAdpter class
 
-tables = osim.C3DFileAdapter().read(os.path.join(test_dir, 'walking5.c3d'), 0)
+#reading tables with COP data from c3d file
+tables = osim.C3DFileAdapter().read(os.path.join(test_dir, 'walking5.c3d'), 1)
+#        Origin = 0, /// the origin of the forceplate
+#        COP = 1,    /// the center of pressure
+#        PWA = 2     /// the point of wrench application (Shimba 1984)
+
 markers = tables['markers']
 forces = tables['forces']
   
