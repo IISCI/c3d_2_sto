@@ -9,7 +9,7 @@ import opensim as osim
 tables = osim.C3DFileAdapter().read(os.path.join(test_dir, 'walking5.c3d'), 1)
 #        Origin = 0, /// the origin of the forceplate
 #        COP = 1,    /// the center of pressure
-#        PWA = 2     /// the point of wrench application (Shimba 1984)
+#        PWA = 2     /// the point of wrench application (Shimba 1984) https://www.ncbi.nlm.nih.gov/pubmed/6715389
 
 markers = tables['markers']
 forces = tables['forces']
